@@ -4,11 +4,14 @@ Add in your Minecraft the Neuro-Sama of Undying or the Evil of Undying (Totem of
 
 <Details>
         <summary>Neuro-Sama of Undying</summary>
+
 ![Neuro-Sama Icon](assets/Neuro-Sama.png)
+        
 </Details>
 
 <Details>
         <summary>Evil of Undying</summary>
+        
 ![Evil Icon](assets/Neuro-Sama.png)
 </Details>
 
