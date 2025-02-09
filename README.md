@@ -1,6 +1,6 @@
 # Neuro-Sama of Undying
 
-Add in you game the Neuro-Sama of Undying (Totem of Undying)
+Add in your game the Neuro-Sama of Undying (Totem of Undying)
 
 ![Pack Icon](pack.png)
 
