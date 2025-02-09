@@ -1,6 +1,6 @@
 # Neuro-Sama of Undying
 
-Add in your Minecraft the Neuro-Sama of Undying or the Evil of Undying (Totem of Undying)
+This resourcepack replaces the default Totem of Undying with one of the following: 
 
 <Details>
         <summary>Neuro-Sama of Undying</summary>
