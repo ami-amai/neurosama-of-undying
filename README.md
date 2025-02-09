@@ -12,7 +12,7 @@ Add in your Minecraft the Neuro-Sama of Undying or the Evil of Undying (Totem of
 <Details>
         <summary>Evil of Undying</summary>
         
-![Evil Icon](assets/Neuro-Sama.png)
+![Evil Icon](assets/Evil.png)
 </Details>
 
 **This pack is free to use for any videos, projects, or just personal use. Just don't redistribute it to other platforms, link this page instead! Don't use this for commercial use since Mojang's EULA prevents that.**
