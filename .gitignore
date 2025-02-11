@@ -1,0 +1,4 @@
+# Temp dir for build
+
+.tmp/
+.latest_tb
