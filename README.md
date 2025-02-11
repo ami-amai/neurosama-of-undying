@@ -5,14 +5,14 @@ This resourcepack replaces the default Totem of Undying with one of the followin
 <Details>
         <summary>Neuro-Sama of Undying</summary>
 
-![Neuro-Sama Icon](assets/Neuro-Sama.png)
+![Neuro-Sama Icon](icons/Neuro-Sama.png)
         
 </Details>
 
 <Details>
         <summary>Evil of Undying</summary>
         
-![Evil Icon](assets/Evil.png)
+![Evil Icon](icons/Evil.png)
 </Details>
 
 Vedal987 soon...
