@@ -2,7 +2,9 @@
 <a href="https://modrinth.com/resourcepack/neurosama-of-undying">
 <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama.png?raw=true" alt="Logo" width="128" />
 </a><center>
+
 <b>Neuro-Sama of Undying</b><center>
+
 Available on Modrinth
 
 ---
@@ -11,7 +13,7 @@ This resource pack changes the Totem of Undying, transforming it into an adorabl
 
 <div align="left">
 
-<b>Currently, the following characters are available:  </b>
+<b> Currently, the following characters are available:  </b>
 
 
 <Details><summary>Neuro-Sama <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama.png?raw=true" alt="Neuro-Sama" width="16"/></summary>
