@@ -44,6 +44,7 @@ lang="assets/minecraft/lang/"
 # Functions
 
 new_config () {
+echo "" > .totem_builder
 # version
 #printf "Send resourcepack version : ${cylw}"; read version; printf "${cclr}"
 #echo "version=$version" > .totem_builder
