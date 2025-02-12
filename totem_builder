@@ -96,7 +96,10 @@ create_meta () {
 echo "{
  \"pack\": {
   \"pack_format\": 34,
-  \"description\": [{\"text\":\"$model of Undying\",\"color\":\"$color\"},{\"text\":\"\nby Ami Amai\",\color\":\"gray\"}]
+  \"description\": [
+	{\"text\":\"$model of Undying\",\"color\":\"$color\"},
+	{\"text\":\"\nby Ami Amai\",\"color\":\"gray\"}
+	]
   }
 }" > $tmp$meta
 }
