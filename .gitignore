@@ -1,4 +1,4 @@
 # Temp dir for build
 
 .tmp/
-.latest_tb
+.totem_builder
