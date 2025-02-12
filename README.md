@@ -24,7 +24,12 @@ This resource pack changes the Totem of Undying, transforming it into an adorabl
 <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Vedal.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Red-Bows.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Acces.png?raw=true" alt="Evil" width="64"/>
 </Details>
 
-<b>In the future, the plans include:</b><left>
+<b>New version system including only:</b>
+* A character
+* The game version
+* Additionally, each version includes bonus variants
+
+<b>In the future, the plans include:</b>
 
 - More characters
 - Adding sounds to the totems
