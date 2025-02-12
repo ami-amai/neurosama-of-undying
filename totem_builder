@@ -45,8 +45,8 @@ lang="assets/minecraft/lang/"
 
 new_config () {
 # version
-printf "Send resourcepack version : ${cylw}"; read version; printf "${cclr}"
-echo "version=$version" > .totem_builder
+#printf "Send resourcepack version : ${cylw}"; read version; printf "${cclr}"
+#echo "version=$version" > .totem_builder
 
 # color of pack
 PS3="Select resourcepack color : "
@@ -138,7 +138,7 @@ mkdir -p $tmp$texture_path
 cp -r $models_path$model"/"$texture $tmp$texture_path"totem_of_undying.png"
 
 cd $tmp
-pack="$model-of-Undying_${version}_1.21.zip"
+pack="$model-of-Undying_1.21.zip"
 zip -0 -r -m $pack "assets/" $meta $icon
 cd ..
 
