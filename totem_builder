@@ -134,7 +134,7 @@ create_meta
 create_lang
 
 # pack.png
-cp -r $icons_path$model".png" $tmp$icon
+cp -r $icons_path$model"/"$texture $tmp$icon
 
 # assets/minecraft/textures/item/totem_of_undying.png
 mkdir -p $tmp$texture_path
