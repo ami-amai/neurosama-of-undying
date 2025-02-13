@@ -34,21 +34,56 @@ dcolors=(dark_red gold dark_green dark_aqua dark_blue dark_purple black dark_gra
 # Assets paths
 models_path="models/"
 icons_path="icons/"
+versions=(34 32 22 18 15 13 12 9 8 7 6 5 4 3)
 
 # Zip paths
 icon="pack.png"
 meta="pack.mcmeta"
-texture_path="assets/minecraft/textures/item/"
 lang="assets/minecraft/lang/"
+
+texture_path="assets/minecraft/textures/item/"
 
 # Functions
 
 new_config () {
 echo "" > .totem_builder
 # version
-#printf "Send resourcepack version : ${cylw}"; read version; printf "${cclr}"
-#echo "version=$version" > .totem_builder
+PS3="Send pack format version : "
+select version in ${versions[@]}; do
+case "$version" in
+"34") mcversion="1.21";;
+"32") mcversion="1.20.5";;
+"22") mcversion="1.20.3-1.20.4";;
+"18") mcversion="1.20.2";;
+"15") mcversion="1.20-1.20.1";;
+"13") mcversion="1.19.4";;
+"12") mcversion="1.19.3";;
+"9") mcversion="1.19-1.19.2";;
+"8") mcversion="1.18-1.18.2";;
+"7") mcversion="1.17-1.17.1";;
+"6") mcversion="1.16.2-1.16.5";;
+"5") mcversion="1.15-1.16.1";;
+"4") mcversion="1.13-1.14.4";;
+"5") mcversion="1.11-1.12.2";;
+esac; break
+done
+echo "version=$version" > .totem_builder
+echo "mcversion=$mcversion" > .totem_builder
 
+# version changes
+if [[ $version == 3 ]]; then
+totemid="totem"
+else
+totemid="totem_of_undying"
+fi
+
+if [[ $version > 4 || $version == 4 ]]; then
+texture_path="assets/minecraft/textures/items/"
+else
+""
+fi
+
+echo "$version $mcversion $texture_path $totemid"
 # color of pack
 PS3="Select resourcepack color : "
 select color in ${lcolors[@]} ${dcolors[@]}; do
@@ -96,7 +131,7 @@ source ./.totem_builder
 create_meta () {
 echo "{
  \"pack\": {
-  \"pack_format\": 34,
+  \"pack_format\": $version,
   \"description\": [
 	{\"text\":\"$model of Undying\",\"color\":\"$color\"},
 	{\"text\":\"\nby Ami Amai\",\"color\":\"gray\"}
@@ -107,8 +142,9 @@ echo "{
 
 create_lang () {
 mkdir -p $tmp$lang
+
 echo "{
- \"item.minecraft.totem_of_undying\": \"$model of Undying\" 
+ \"item.minecraft.$totemid\": \"$model of Undying\" 
 }" > $tmp$lang"en_us.json"
 }
 
@@ -139,10 +175,10 @@ cp -r $icons_path$model"/"$texture $tmp$icon
 
 # assets/minecraft/textures/item/totem_of_undying.png
 mkdir -p $tmp$texture_path
-cp -r $models_path$model"/"$texture $tmp$texture_path"totem_of_undying.png"
+cp -r $models_path$model"/"$texture $tmp$texture_path"$totemid.png"
 
 cd $tmp
-pack="$model-of-Undying_1.21.zip"
+pack="$model-of-Undying_$mcversion.zip"
 zip -0 -r -m $pack "assets/" $meta $icon
 cd ..
 
