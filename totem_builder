@@ -17,7 +17,9 @@
 # End of note
 
 # Build values
-tmp=".tmp/"
+tmp_path="tmp/"
+tmp="$tmp_path.tmp"
+
 # Colors
 cclr="\e[0m"
 cred="\e[91m"
@@ -42,12 +44,14 @@ meta="pack.mcmeta"
 lang="assets/minecraft/lang/"
 
 texture_path="assets/minecraft/textures/item/"
+id="totem_of_undying"
 
+mkdir -p $tmp_path
 # Functions
 
-new_config () {
-echo "" > .totem_builder
-# version
+version_stage () {
+
+# Set version and mcversion
 PS3="Send pack format version : "
 select version in ${versions[@]}; do
 case "$version" in
@@ -64,27 +68,32 @@ case "$version" in
 "6") mcversion="1.16.2-1.16.5";;
 "5") mcversion="1.15-1.16.1";;
 "4") mcversion="1.13-1.14.4";;
-"5") mcversion="1.11-1.12.2";;
+"3") mcversion="1.11-1.12.2";;
 esac; break
 done
 echo "version=$version" > .totem_builder
-echo "mcversion=$mcversion" > .totem_builder
+echo "mcversion=$mcversion" >> .totem_builder
 
-# version changes
+# Changes for versions
+## Id of totem
 if [[ $version == 3 ]]; then
-totemid="totem"
+id="totem"
 else
-totemid="totem_of_undying"
+""
 fi
 
+# Path to texture
 if [[ $version > 4 || $version == 4 ]]; then
 texture_path="assets/minecraft/textures/items/"
 else
 ""
 fi
 
-echo "$version $mcversion $texture_path $totemid"
-# color of pack
+}
+
+color_stage () {
+
+# Set color for pack.mcmeta
 PS3="Select resourcepack color : "
 select color in ${lcolors[@]} ${dcolors[@]}; do
 	break
@@ -93,26 +102,30 @@ printf "${cclr}"
 
 echo "color=$color" >> .totem_builder
 
-# model
-echo "models=(" > $tmp".tmp"
-dir $models_path >> $tmp".tmp"
-echo ")" >> $tmp".tmp"
-source "./$tmp.tmp"
+
+}
+
+model_stage () {
+
+# Select texture for totem
+echo "models=(" > $tmp; dir $models_path >> $tmp; echo ")" >> $tmp
+source $tmp
 
 PS3="Select model name :"
 select model in ${models[@]}; do
-	break
-done
+break; done
 
 echo "model=$model" >> .totem_builder
+
+}
+
+texture_stage () {
 
 # texture
 textures_path="$models_path$model/"
 
-echo "textures=(" > $tmp".tmp"
-dir $textures_path >> $tmp".tmp"
-echo ")" >> $tmp".tmp"
-source $tmp".tmp"
+echo "textures=(" > $tmp; dir $textures_path >> $tmp; echo ")" >> $tmp
+source $tmp
 
 PS3="Select texture : "
 select texture in ${textures[@]}; do
@@ -120,6 +133,19 @@ select texture in ${textures[@]}; do
 done
 
 echo "texture=$texture" >> .totem_builder
+
+}
+
+new_config () {
+echo "" > .totem_builder
+
+version_stage
+color_stage
+model_stage
+texture_stage
+
+echo "$version $mcversion $texture_path $totemid"
+# color of pack
 
 cat .totem_builder
 }
@@ -137,22 +163,16 @@ echo "{
 	{\"text\":\"\nby Ami Amai\",\"color\":\"gray\"}
 	]
   }
-}" > $tmp$meta
+}" > $tmp_path$meta
 }
 
 create_lang () {
-mkdir -p $tmp$lang
-
 echo "{
- \"item.minecraft.$totemid\": \"$model of Undying\" 
-}" > $tmp$lang"en_us.json"
+ \"item.minecraft.$id\": \"$model of Undying\" 
+}" > $tmp_path$lang"en_us.json"
 }
 
 # Script
-
-# Get Values for resourcepack
-
-mkdir -p $tmp
 
 PS3="Do u want to laod latest config? : "
 select load in "Yes" "No"; do
@@ -164,25 +184,35 @@ select load in "Yes" "No"; do
 	break
 done
 
-# pack.mcmeta
+# Prepair dirs
+mkdir -p $tmp_path$lang
+mkdir -p $tmp_path$texture_path
+mkdir -p "resourcepacks/$model/$mcversion/$pack"
+
+# Generate pack
+
 create_meta
-
-# assets/minecraft/lang/en_us.json
 create_lang
+cp -r $icons_path$model"/"$texture $tmp_path$icon
+cp -r $models_path$model"/"$texture $tmp_path$texture_path"$totemid.png"
 
-# pack.png
-cp -r $icons_path$model"/"$texture $tmp$icon
-
-# assets/minecraft/textures/item/totem_of_undying.png
-mkdir -p $tmp$texture_path
-cp -r $models_path$model"/"$texture $tmp$texture_path"$totemid.png"
-
-cd $tmp
+cd $tmp_path
 pack="$model-of-Undying_$mcversion.zip"
 zip -0 -r -m $pack "assets/" $meta $icon
 cd ..
 
-cp $tmp$pack "resourcepacks/$pack"
+cp $tmp_path$pack "resourcepacks/$model/$mcversion/$pack"
+
+# pack.mcmeta
+# assets/minecraft/lang/en_us.json
+# pack.png
+# assets/minecraft/textures/item/totem_of_undying.png
+
+
+
+
+
+
 
 
 
