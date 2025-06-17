@@ -1,45 +1,41 @@
-<div align="center">
-<a href="https://modrinth.com/resourcepack/neurosama-of-undying">
-<img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama.png?raw=true" alt="Logo" width="128" />
-</a><center>
+<div name=top align=center>
+<img src="https://raw.githubusercontent.com/ami-amai/neurosama-of-undying/refs/heads/main/page/neuro-orig.png" width=15%>
+<h1> Neuro-sama of Undying </h1>
+<h4> Resourcepack for the Minecraft </h4>
+</div>
 
-<b>Neuro-Sama of Undying</b><center>
+<div name=middle>
+<p align=center>
+The resourcepack allows you to change the Totem the undying of your favorite character from the Neuro-Sama universe.
+</p>
+<br>
+<p>
+<b> Available right now: </b>
+</p>
 
-Available on Modrinth
+<ul>
+<li>
+2 versions of resourcepack: <b>Neuro-Sama</b> and <b>Evilyn</b>
+</li>
 
----
+<li>
+4 different versions for each resourcepack version
+</li>
 
-This resource pack changes the Totem of Undying, transforming it into an adorable character from the Neuro-Sama universe.<center>
+<li>
+All versions of resourcepack is available on all versions of Minecraft that include the totem of undying.
+</li>
+</ul>
 
-<div align="left">
+</div>
 
-<b> Currently, the following characters are available:  </b>
+<h1></h1>
 
-
-<Details><summary>Neuro-Sama <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama.png?raw=true" alt="Neuro-Sama" width="16"/></summary>
-<img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama.png?raw=true" alt="Neuro-Sama" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama-without-Vedal.png?raw=true" alt="Neuro-Sama" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama-without-Red-Bows.png?raw=true" alt="Neuro-Sama" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Neuro-Sama/Neuro-Sama-without-Acces.png?raw=true" alt="Neuro-Sama" width="64"/>
-</Details>
-
-<Details><summary> Evil <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil.png?raw=true" alt="Evil" width="16"/></summary>
-<img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Vedal.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Red-Bows.png?raw=true" alt="Evil" width="64"/> <img src="https://github.com/ami-amai/neurosama-of-undying/blob/main/icons/Evil/Evil-without-Acces.png?raw=true" alt="Evil" width="64"/>
-</Details>
-
-<b>New version system including only:</b>
-* A character
-* The game version
-* Additionally, each version includes bonus variants
-
-<b>In the future, the plans include:</b>
-
-- More characters
-- Adding sounds to the totems
-- Expanding the number of compatible Minecraft versions
-
-<div align="center">
-<a href="https://github.com/ami-amai/neurosama-of-undying/">
-<img src="https://raw.githubusercontent.com/Kunzisoft/Github-badge/refs/heads/main/get-it-on-github.png" alt="drawing" width="175"/>
-</a><center>
-
-<b>This pack is free to use for any videos, projects, or just personal use. Just don't redistribute it to other platforms, link this page instead! Don't use this for commercial use since Mojang's EULA prevents that.</b>
-
-> Credits: Concepts of Neuro-sama and Evil Neuro: Vedal987.
+<div name=bottom align=center>
+<h6>
+	<a href="https://creativecommons.org/licenses/by-nc-sa"> @CC BY-NC-SA 4.0 License </a>
+    <br> <br>
+    <a href="https://modrinth.com/resourcepack/neurosama-of-undying"> @Modrinth </a>
+    <a href="https://github.com/ami-amai/neurosama-of-undying"> @Github </a>
+</h6>
+</div>
