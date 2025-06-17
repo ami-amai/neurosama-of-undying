@@ -33,7 +33,7 @@ All versions of resourcepack is available on all versions of Minecraft that incl
 
 <div name=bottom align=center>
 <h6>
-	<a href="https://creativecommons.org/licenses/by-nc-sa"> @CC BY-NC-SA 4.0 License </a>
+	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"> @CC BY-NC-SA 4.0 License </a>
     <br> <br>
     <a href="https://modrinth.com/resourcepack/neurosama-of-undying"> @Modrinth </a>
     <a href="https://github.com/ami-amai/neurosama-of-undying"> @Github </a>
