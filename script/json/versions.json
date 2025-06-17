@@ -1,0 +1,106 @@
+{
+    "versions": {
+        "minecraft": [
+            {
+                "id": 3,
+                "name": "1.11–1.12.2"
+            },
+            {
+                "id": 4,
+                "name": "1.13–1.14.4"
+            },
+            {
+                "id": 5,
+                "name": "1.15–1.16.1"
+            },
+            {
+                "id": 6,
+                "name": "1.16.2–1.16.5"
+            },
+            {
+                "id": 7,
+                "name": "1.17"
+            },
+            {
+                "id": 8,
+                "name": "1.18"
+            },
+            {
+                "id": 9,
+                "name": "1.19–1.19.2"
+            },
+            {
+                "id": 12,
+                "name": "1.19.3"
+            },
+            {
+                "id": 13,
+                "name": "1.19.4"
+            },
+            {
+                "id": 15,
+                "name": "1.20.0-1.20.1"
+            },
+            {
+                "id": 18,
+                "name": "1.20.2"
+            },
+            {
+                "id": 22,
+                "name": "1.20.3–1.20.4"
+            },
+            {
+                "id": 34,
+                "name": "1.21-1.21.2"
+            },
+            {
+                "id": 42,
+                "name": "1.21.3"
+            },
+            {
+                "id": 46,
+                "name": "1.21.4"
+            },
+            {
+                "id": 55,
+                "name": "1.21.5"
+            }
+        ],
+        "resourcepack": {
+            "main": [
+                {
+                    "name": "Neuro-Sama",
+                    "color": {
+                        "description": "yellow",
+                        "lang": "§e"
+                    }
+                },
+                {
+                    "name": "Evilyn",
+                    "color": {
+                        "description": "red",
+                        "lang": "§c"
+                    }
+                }
+            ],
+            "alt": [
+                {
+                    "name": "Original",
+                    "file": "main.png"
+                },
+                {
+                    "name": "Alt-version",
+                    "file": "alt1.png"
+                },
+                {
+                    "name": "Second-Alt-version",
+                    "file": "alt2.png"
+                },
+                {
+                    "name": "Clear-version",
+                    "file": "clear.png"
+                }
+            ]
+        }
+    }
+}
