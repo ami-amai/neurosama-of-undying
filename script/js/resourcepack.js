@@ -1,31 +1,29 @@
 class Resourcepack {
 
     constructor(minecraftVersion, resourcepackVersion) {
-        this.minecraftVersion = minecraftVersion
-        this.minecraftVersionId = minecraftVersion.id
-        this.minecraftVersionName = minecraftVersion.name
 
+        this.minecraftVersion = minecraftVersion
         this.resourcepackVersion = resourcepackVersion
-        this.resourcepackVersionName = resourcepackVersion.name
-        this.resourcepackVersionColorDescription = resourcepackVersion.color.description
-        this.resourcepackVersionColorLanguage = resourcepackVersion.color.lang
+
     }
 
     setResourcepackVersionAlt(resourcepackVersionAlt) {
         this.resourcepackVersionAlt = resourcepackVersionAlt
-        this.resourcepackVersionAltName = resourcepackVersionAlt.name
-        this.resourcepackVersionAltFile = resourcepackVersionAlt.file
     }
 
-    // Generate Files
     getMcmeta() {
+
         const output = {
             "pack": {
-                "pack_format": this.minecraftVersionId,
+                "pack_format": this.minecraftVersion.pack_format,
                 "description": [
-                    { "text": `${this.resourcepackVersionName} of Undying`, "color": this.resourcepackVersionColorDescription },
+                    { "text": `${this.resourcepackVersion.name} of Undying`, "color": this.resourcepackVersion.description.color },
                     { "text": "\nby Ami Amai", "color": "gray" }
-                ]
+                ],
+                "supported_formats": {
+                    "min_inclusive": this.minecraftVersion.pack_format,
+                    "max_inclusive": this.minecraftVersion.max_inclusive
+                }
             }
         }
 
@@ -35,11 +33,11 @@ class Resourcepack {
     getLanguage() {
 
         let output = {
-            "item.minecraft.totem_of_undying": `${this.resourcepackVersionColorLanguage}${this.resourcepackVersionName} of Undying`
+            "item.minecraft.totem_of_undying": `${this.resourcepackVersion.description.lang}${this.resourcepackVersion.name} of Undying`
         }
 
-        if (this.minecraftVersionId <= 3) {
-            output = `item.totem.name=${this.resourcepackVersionColorLanguage}${this.resourcepackVersionName} of Undying`
+        if (this.minecraftVersion.pack_format <= 3) {
+            output = `item.totem.name=${this.resourcepackVersion.description.lang}${this.resourcepackVersion.name} of Undying`
             return output
         }
         else {
@@ -47,13 +45,11 @@ class Resourcepack {
         }
     }
 
-    // Paths and Folders
-
     getStructure() {
 
         let texture = "item/totem_of_undying.png"
         let language = ".json"
-        if (this.minecraftVersionId <= 3) {
+        if (this.minecraftVersion.pack_format <= 3) {
             texture = "items/totem.png"
             language = ".lang"
         }
@@ -67,11 +63,11 @@ class Resourcepack {
     }
 
     getName() {
-        return `${this.resourcepackVersionName}-of-Undying-${this.resourcepackVersionAltName}_${this.minecraftVersionName}`
+        return `${this.resourcepackVersion.name}-of-Undying-${this.resourcepackVersionAlt.name}_${this.minecraftVersion.name}`
     }
 
-    getDir() {
-        return `${this.getName()}/`
+    getZip() {
+        return `${this.getName()}.zip`
     }
 
 }

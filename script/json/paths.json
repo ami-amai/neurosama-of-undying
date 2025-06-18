@@ -1,10 +1,9 @@
 {
-    "paths": {
+
         "script": {
             "assets": "./assets/",
             "resourcepack": "./resourcepack/",
             "binaries": "./binaries/",
             "page": "./page/"
         }
-    }
 }
