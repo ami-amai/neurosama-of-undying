@@ -16,7 +16,7 @@
 
 <h4> Next steps </h4>
 
-- [ ] Textures for Vedal and another persons
+- [ ] Vedal and another persons
 - [ ] Sounds
 
 <h1> </h1>
