@@ -4,56 +4,71 @@ const sharp = require("sharp")
 const archiver = require("archiver")
 
 const Resourcepack = require("./js/resourcepack").Resourcepack
-const versionsJson = require("./json/versions.json").versions
-const pathsJson = require("./json/paths.json").paths
+const versionsJson = require("./json/versions.json")
+const pathsJson = require("./json/paths.json")
 
 // Binaries
 const minecraftVersions = versionsJson.minecraft
-const resourcepackVersions = versionsJson.resourcepack.main
-const resourcepackAltVersions = versionsJson.resourcepack.alt
+const resourcepackVersions = versionsJson.script.version
+const resourcepackAltVersions = versionsJson.script.alternative
 
 const scriptAssetsDir = pathsJson.script.assets
 const scriptBinariesDir = pathsJson.script.binaries
 
-fs.rmSync(`${scriptBinariesDir}`, { recursive: true, force: true })
-fs.mkdirSync(`${scriptBinariesDir}`, { recursive: true, force: true })
+fs.rmSync(scriptBinariesDir, { recursive: true, force: true })
+fs.mkdirSync(scriptBinariesDir, { recursive: true, force: true })
+
+// Minecraft Version forEach
 Object.values(minecraftVersions).forEach(minecraftVersion => {
 
-fs.mkdirSync(`${scriptBinariesDir}${minecraftVersion.name}/`, { recursive: true, force: true })
+    const binariesMinecraftVersionDir = `${scriptBinariesDir}${minecraftVersion.name}/`
 
+    fs.mkdirSync(binariesMinecraftVersionDir, { recursive: true, force: true })
+
+    // Resourcepack version forEach
     Object.values(resourcepackVersions).forEach(resourcepackVersion => {
 
+        // Create resourcepack object
         const resourcepack = new Resourcepack(minecraftVersion, resourcepackVersion)
         const resourcepackStructure = resourcepack.getStructure()
 
-        const resourcepackMcmeta = `${resourcepack.getMcmeta()}`
-        const resourcepackLanguage = `${resourcepack.getLanguage()}`
+        // Prepair first layer files
+        const resourcepackMcmeta = resourcepack.getMcmeta()
+        const resourcepackLanguage = resourcepack.getLanguage()
 
-        Object.values(resourcepackAltVersions).forEach(resourcepackVersionAlt => {
+        // Resourceppack alternative forEach
+        Object.values(resourcepackAltVersions).forEach(resourcepackAltVersion => {
 
-            resourcepack.setResourcepackVersionAlt(resourcepackVersionAlt)
+            // Set Alternative data inside resourcepack object
+            resourcepack.setResourcepackVersionAlt(resourcepackAltVersion)
 
-            const sourceDir = `${scriptAssetsDir}${resourcepack.resourcepackVersionName}/${resourcepack.resourcepackVersionAltFile}`
-
-            // Create ZIP file
-            const resourcepackZipOutput = fs.createWriteStream(`${scriptBinariesDir}${minecraftVersion.name}/${resourcepack.getName()}.zip`)
-            const resourcepackZipArchive = new archiver("zip", {
-                zlib: { level: 9 },
-            })
-            resourcepackZipArchive.pipe(resourcepackZipOutput);
-
-            // add files
-            resourcepackZipArchive.append(resourcepackMcmeta, { name: `${resourcepackStructure.mcmeta}` });
-            resourcepackZipArchive.file(`${sourceDir}`, { name: `${resourcepackStructure.texture}` });
-
-            const resourcepackIcon = sharp(`${sourceDir}`)
+            // Create second layer files
+            const resourcepackTexture = `${scriptAssetsDir}${resourcepackVersion.name}/${resourcepackAltVersion.file_name}`
+            const resourcepackIcon = sharp(resourcepackTexture)
                 .resize(256, 256, {
                     kernel: sharp.kernel.nearest
                 })
-            resourcepackZipArchive.append(resourcepackIcon, { name: `${resourcepackStructure.icon}` });
 
-            resourcepackZipArchive.append(resourcepackLanguage, { name: `${resourcepackStructure.language}` });
-            resourcepackZipArchive.finalize();
+
+            // Create ZIP file
+            const binariesResourcepackZip = `${binariesMinecraftVersionDir}${resourcepack.getZip()}`
+            const resourcepackOutput = fs.createWriteStream(binariesResourcepackZip)
+            const resourcepackArchive = new archiver("zip", {
+                zlib: { level: 9 },
+            })
+            resourcepackArchive.pipe(resourcepackOutput);
+
+            // Add first layer files
+            resourcepackArchive.append(resourcepackMcmeta, { name: resourcepackStructure.mcmeta });
+            console.log(resourcepackMcmeta)
+            resourcepackArchive.append(resourcepackLanguage, { name: resourcepackStructure.language });
+
+            // Add second layer files
+            resourcepackArchive.file(resourcepackTexture, { name: resourcepackStructure.texture });
+            resourcepackArchive.append(resourcepackIcon, { name: resourcepackStructure.icon });
+
+
+            resourcepackArchive.finalize();
         })
     })
 })
