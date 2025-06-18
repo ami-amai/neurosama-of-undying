@@ -1,41 +1,33 @@
-<div name=top align=center>
-<img src="https://raw.githubusercontent.com/ami-amai/neurosama-of-undying/refs/heads/main/page/neuro-orig.png" width=15%>
-<h1> Neuro-sama of Undying </h1>
+<div align=center>
+<img src="./page/neuro-orig.png" width=15%>
+<h1 align=center> Neuro-Sama of Undying </h1>
 <h4> Resourcepack for the Minecraft </h4>
 </div>
 
-<div name=middle>
-<p align=center>
-The resourcepack allows you to change the Totem the undying of your favorite character from the Neuro-Sama universe.
-</p>
+<p align=center> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
+
 <br>
-<p>
-<b> Available right now: </b>
-</p>
 
-<ul>
-<li>
-2 versions of resourcepack: <b>Neuro-Sama</b> and <b>Evilyn</b>
-</li>
+<h4> Right now </h4>
 
-<li>
-4 different versions for each resourcepack version
-</li>
+- 2 versions of the resourcepack: **Neuro-Sama** and **Evilyn**
+- 4 Alternatives for each version of the resourcepackk
+- All supported versions of the Minecraft
 
-<li>
-All versions of resourcepack is available on all versions of Minecraft that include the totem of undying.
-</li>
-</ul>
+<h4> Next steps </h4>
 
-</div>
+- [ ] Textures for Vedal and another persons
+- [ ] Sounds
 
-<h1></h1>
+<h1> </h1>
 
-<div name=bottom align=center>
+<div align=center>
 <h6>
 	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"> @CC BY-NC-SA 4.0 License </a>
-    <br> <br>
-    <a href="https://modrinth.com/resourcepack/neurosama-of-undying"> @Modrinth </a>
-    <a href="https://github.com/ami-amai/neurosama-of-undying"> @Github </a>
+    <br>
+    <br>
+    <a href="https://modrinth.com/resourcepack/neurosama-of-undying"> @Modrinth</a>
+    <br>
+    <a href="https://github.com/ami-amai/neurosama-of-undying">@Github </a>
 </h6>
 </div>
