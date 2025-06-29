@@ -6,7 +6,7 @@ Preview for <b> Alternative versions </b>
 
 | Preview | Description |
 | :---: | :---: |
-| ![image](./orig.png) | Original version |
-| ![image](./alt.png) | Alternative version |
-| ![image](./alt2.png) | Second Alternative version |
-| ![image](./clear.png) | Clear version |
+| ![image](/page/evilyn/orig.png) | Original version |
+| ![image](/page/evilyn/alt.png) | Alternative version |
+| ![image](/page/evilyn/alt2.png) | Second Alternative version |
+| ![image](/page/evilyn/clear.png) | Clear version |
