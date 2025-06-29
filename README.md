@@ -5,8 +5,8 @@
 <p> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
 </div>
 
-### 1 version:
-- 2 versions of the resourcepack: **[Neuro-Sama](./page/neuro-sama/neuro-sama.md)** and **[Evilyn](./page/evilyn/evilyn.md)**
+### 1 Release version:
+- 2 **Person Versions** of the resourcepack: **[Neuro-Sama](./page/neuro-sama/neuro-sama.md)** and **[Evilyn](./page/evilyn/evilyn.md)**
 - All supported versions of the Minecraft
 
 ### In the future:
