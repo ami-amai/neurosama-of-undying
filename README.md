@@ -20,6 +20,6 @@
 
 [@CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-Get on:
+**Get on:
 [@Modrinth](https://modrinth.com/resourcepack/neurosama-of-undying)
-[@Github](https://github.com/ami-amai/neurosama-of-undying)
+[@Github](https://github.com/ami-amai/neurosama-of-undying)**
