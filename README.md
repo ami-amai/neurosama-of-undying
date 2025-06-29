@@ -6,7 +6,7 @@
 </div>
 
 ### 1 version:
-- 2 versions of the resourcepack: **Neuro-Sama** and **Evilyn**
+- 2 versions of the resourcepack: **[Neuro-Sama](./page/neuro-sama/neuro-sama.md)** and **[Evilyn](./page/evilyn/evilyn.md)**
 - All supported versions of the Minecraft
 
 ### In the future:
