@@ -6,7 +6,7 @@ Preview for <b> Alternative versions </b>
 
 | Preview | Description |
 | :---: | :---: |
-| ![image](/page/neuro-sama/orig.png) | Original version |
-| ![image](/page/neuro-sama/alt.png) | Alternative version |
-| ![image](/page/neuro-sama/alt2.png) | Second Alternative version |
-| ![image](/page/neuro-sama/clear.png) | Clear version |
+| ![image](/../main/page/neuro-sama/orig.png) | Original version |
+| ![image](/../main/page/neuro-sama/alt.png) | Alternative version |
+| ![image](/../main/page/neuro-sama/alt2.png) | Second Alternative version |
+| ![image](/../main/page/neuro-sama/clear.png) | Clear version |
