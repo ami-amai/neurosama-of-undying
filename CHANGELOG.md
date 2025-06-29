@@ -3,7 +3,7 @@ The resourcepack version includes:
 - **Release** (1, 2 and etc.)
 - **Game version** (1.11 or 1.13)
 - **Person version** (Neuro-Sama, Evilyn and etc.)
-- **Alternative version** (Original, Alt1, Alt2 or Clear)
+- **Alternative version** (Original, Alt, 2nd Alt or Clear)
 
 # Changelog
 
@@ -26,4 +26,8 @@ The resourcepack version includes:
 - Added **Evilyn**
 
 #### Alternative version
-
+- Added system with 4 alternative versions:
+  - Original
+  - Alternative
+  - Second Alternative
+  - Clear
