@@ -67,7 +67,6 @@ Object.values(minecraftVersions).forEach(minecraftVersion => {
             resourcepackArchive.file(resourcepackTexture, { name: resourcepackStructure.texture });
             resourcepackArchive.append(resourcepackIcon, { name: resourcepackStructure.icon });
 
-
             resourcepackArchive.finalize();
         })
     })
