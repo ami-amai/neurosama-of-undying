@@ -1,5 +1,5 @@
 <div align=center>
-<img src="./page/neuro-orig.png" width=128px>
+<img src="./page/title.png">
 <h1> Neuro-Sama of Undying </h1>
 <h4> Resourcepack for the Minecraft </h4>
 <p> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
