@@ -1,33 +1,25 @@
 <div align=center>
-<img src="./page/neuro-orig.png" width=15%>
+<img src="./page/neuro-orig.png" width=128px>
 <h1 align=center> Neuro-Sama of Undying </h1>
 <h4> Resourcepack for the Minecraft </h4>
+<p align=center> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
 </div>
 
-<p align=center> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
-
-<br>
-
-<h4> Right now </h4>
-
+### 1 version:
 - 2 versions of the resourcepack: **Neuro-Sama** and **Evilyn**
-- 4 Alternatives for each version of the resourcepackk
 - All supported versions of the Minecraft
 
-<h4> Next steps </h4>
+### In the future:
+* Vedal
+* Sounds
+* Another persons
 
-- [ ] Vedal and another persons
-- [ ] Sounds
+### [Changelog](CHANGELOG.md)
 
-<h1> </h1>
+-----
 
-<div align=center>
-<h6>
-	<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"> @CC BY-NC-SA 4.0 License </a>
-    <br>
-    <br>
-    <a href="https://modrinth.com/resourcepack/neurosama-of-undying"> @Modrinth</a>
-    <br>
-    <a href="https://github.com/ami-amai/neurosama-of-undying">@Github </a>
-</h6>
-</div>
+[@CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+Get on:
+[@Modrinth](https://modrinth.com/resourcepack/neurosama-of-undying)
+[@Github](https://github.com/ami-amai/neurosama-of-undying)
