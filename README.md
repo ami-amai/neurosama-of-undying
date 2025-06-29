@@ -7,7 +7,7 @@
 
 ### 1 Release version:
 - 2 **Person Versions** of the resourcepack: **[Neuro-Sama](./page/neuro-sama/neuro-sama.md)** and **[Evilyn](./page/evilyn/evilyn.md)**
-- All supported versions of the Minecraft
+- Support for all **Game Versions**
 
 ### In the future:
 * Vedal
