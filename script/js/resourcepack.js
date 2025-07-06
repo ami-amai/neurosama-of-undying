@@ -1,9 +1,12 @@
+const versionsJSON = require("../json/versions.json")
+
 class Resourcepack {
 
     constructor(minecraftVersion, resourcepackVersion) {
 
         this.minecraftVersion = minecraftVersion
         this.resourcepackVersion = resourcepackVersion
+        this.mainVersion = versionsJSON.resourcepack 
 
     }
 
@@ -63,7 +66,7 @@ class Resourcepack {
     }
 
     getName() {
-        return `${this.resourcepackVersion.name}-of-Undying-${this.resourcepackVersionAlt.name}_${this.minecraftVersion.name}`
+        return `${this.resourcepackVersion.name}-of-Undying-${this.resourcepackVersionAlt.name}_${this.minecraftVersion.name}_${this.mainVersion}`
     }
 
     getZip() {
