@@ -5,23 +5,34 @@
 <p> Cute! Pretty! Undying! </p>
 </div>
 
-#### Current version
+### Description
 
-##### Release 1
+Resourcepack replaces default Totem of Undying with characters from Neuro-sama verse
 
-* Has 4 versions for Neuro-sama and Evilyn
-* One archive for any version of game
-* [**Preview**](https://github.com/ami-amai/neurosama-of-undying/blob/main/page/preview/PREVIEW.md)
+* Preview with all textures [**HERE**](https://github.com/ami-amai/neurosama-of-undying/blob/main/preview/PREVIEW.md)
 
-[Release](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1)
+### Versions
+
+#### Current
+
+* [**First release**](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1)
+    * One archive for any minecraft version
+    * Every version has 4 alternatives
+
+* Included versions:
+    * Neuro-sama
+    * Evilyn
+
+
+#### Next
+
+* **Second release**
+    * Sounds for Neuro-sama and Evilyn
+
+* New versions:
+    * Vedal
 
 **[Changelog](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md)**
-
-#### Next versions
-
-* Sounds for Neuro-sama and Evilyn
-* Vedal
-
 ---
 
 [@CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0)
