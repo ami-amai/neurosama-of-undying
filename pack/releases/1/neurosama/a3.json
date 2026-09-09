@@ -1,7 +1,7 @@
 {
     "metadata": {
         "type": "resourcepack",
-        "name": "§eNeuro-sama of Undying",
+        "name": "§eNeuro-sama_of_Undying",
         "author": "Ami_Amai",
         "id": "neurosama-of-undying",
         "version": "a3-1",
@@ -22,6 +22,6 @@
         ]
     },
     "namedata": [
-        "{name} {version}"
+        "{name}_{version}"
     ]
 }
