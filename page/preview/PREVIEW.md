@@ -2,6 +2,7 @@
 <h1> Preview </h1>
 <p align=center>
 Preview for <b> All </b> versions of textures
+<p> Original -> Alt -> Alt2 -> Alt3 </p>
 </p>
 
 Images | Version
