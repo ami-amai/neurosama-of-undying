@@ -41,4 +41,4 @@ Resourcepack replaces default Totem of Undying with characters from Neuro-sama v
 
 * [**@Github**](https://github.com/ami-amai/neurosama-of-undying)
 * [**@Modrinth**](https://modrinth.com/resourcepack/neurosama-of-undying)
-* [**@CurseForge**](https://www.curseforge.com/minecraft/texture-packs/neuro-sama-of-undying)
+* [**@CurseForge**](https://www.curseforge.com/minecraft/texture-packs/neurosama-of-undying)
