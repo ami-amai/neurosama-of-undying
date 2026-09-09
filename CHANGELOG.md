@@ -1,33 +1,35 @@
-# Version system
-The resourcepack version includes:
-- **Release** (1, 2 and etc.)
-- **Game version** (1.11 or 1.13)
-- **Person version** (Neuro-Sama, Evilyn and etc.)
-- **Alternative version** (Original, Alt, 2nd Alt or Clear)
-
 # Changelog
 
-## 1 Release
+## Releases
 
-### Project
-* Improved [version system](#version-system)
-* Rewrited [Readme.md](README.md)
-* Added Changelog.md (this file)
-* Made [script](/script/main.js) for compiling resourcepacks 
+* [**First**](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1)
 
-### Resourcepack
+## 1
 
-#### Game versions
-- Added support for the minecraft versions from 1.11 to 1.12.2
-- Added support for the minecraft versions from 1.13 to 1.21.6
+* [**New Version Format**](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1-new-version-format)
+* [**Support**](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1-support)
+* [**Release**](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1-release)
 
-#### Person versions
-- Added **Neuro-Sama**
-- Added **Evilyn**
+### 1 New Version Format
 
-#### Alternative version
-- Added system with 4 alternative versions:
-  - Original
-  - Alternative
-  - Second Alternative
-  - Clear
+* Resourcepack has special format for versions `<version> <subversion>-<release_version>`
+  * `<version>` - character
+  * `<subversion>` - variant of `<version>`
+  * `<release_version>` - release with new features
+
+### 1 Support
+
+* Works with any version of Minecraft that includes the “Totem of Undying"
+* One archive for any version of game
+* Creating archives with my [**pack generator**](https://github.com/ami-amai/mc-pack-generator)
+
+### 1 Release
+
+* First release of resourcepack
+  * `<version>`:
+      * neurosama
+      * evilyn
+  * `<subversion>`
+      * original (o) - has all details on texture
+      * 3 alternatives (a, a2, a3) - don't have some details on texture
+  * Release on Github, Modrinth and Curseforge

@@ -1,26 +1,33 @@
 <div align=center>
-<img src="./page/title.png">
+<img src="https://raw.githubusercontent.com/ami-amai/neurosama-of-undying/refs/heads/main/page/icon.png">
 <h1> Neuro-Sama of Undying </h1>
 <h4> Resourcepack for the Minecraft </h4>
-<p> Bored with your usual Totem of Undying? Replace it with Neuro-Sama or her friends! </p>
+<p> Cute! Pretty! Undying! </p>
 </div>
 
-### 1 Release version:
-- 2 **Person Versions** of the resourcepack: **[Neuro-Sama](./page/neuro-sama/neuro-sama.md)** and **[Evilyn](./page/evilyn/evilyn.md)**
-- Support for all **Game Versions**
+#### Current version
 
-### In the future:
+##### Release 1
+
+* Has 4 versions for Neuro-sama and Evilyn
+* One archive for any version of game
+* [**Preview**](https://github.com/ami-amai/neurosama-of-undying/blob/main/page/preview/PREVIEW.md)
+
+[Release](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md#1)
+
+**[Changelog](https://github.com/ami-amai/neurosama-of-undying/blob/main/CHANGELOG.md)**
+
+#### Next versions
+
+* Sounds for Neuro-sama and Evilyn
 * Vedal
-* Sounds
-* Another persons
 
-### [Changelog](CHANGELOG.md)
-
------
+---
 
 [@CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-**Get on:
-[@Github](https://github.com/ami-amai/neurosama-of-undying)
-[@Modrinth](https://modrinth.com/resourcepack/neurosama-of-undying)
-[@CurseForge](https://www.curseforge.com/minecraft/texture-packs/neuro-sama-of-undying)**
+**Get on:**
+
+* [**@Github**](https://github.com/ami-amai/neurosama-of-undying)
+* [**@Modrinth**](https://modrinth.com/resourcepack/neurosama-of-undying)
+* [**@CurseForge**](https://www.curseforge.com/minecraft/texture-packs/neuro-sama-of-undying)

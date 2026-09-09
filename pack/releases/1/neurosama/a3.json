@@ -1,0 +1,27 @@
+{
+    "metadata": {
+        "type": "resourcepack",
+        "name": "§eNeuro-sama of Undying",
+        "author": "Ami_Amai",
+        "id": "neurosama-of-undying",
+        "version": "a3-1",
+        "format": [3, 88.0]
+    },
+    "filedata": {
+        "alt3.png": [
+            "pack.png",
+            "assets/minecraft/textures/item/totem_of_undying.png",
+            "assets/minecraft/textures/items/totem_of_undying.png",
+            "assets/minecraft/textures/items/totem.png"
+        ],
+        "lang/en_us.lang": [
+            "assets/minecraft/lang/en_us.lang"
+        ],
+        "lang/en_us.json": [
+            "assets/minecraft/lang/en_us.json"
+        ]
+    },
+    "namedata": [
+        "{name} {version}"
+    ]
+}
