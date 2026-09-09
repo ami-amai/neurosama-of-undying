@@ -1,14 +1,14 @@
 {
     "metadata": {
         "type": "resourcepack",
-        "name": "§eNeuro-sama_of_Undying",
+        "name": "Neuro-sama_of_Undying",
         "author": "Ami_Amai",
         "id": "neurosama-of-undying",
-        "version": "a2-1",
+        "version": "o-1",
         "format": [3, 88.0]
     },
     "filedata": {
-        "alt2.png": [
+        "original.png": [
             "pack.png",
             "assets/minecraft/textures/item/totem_of_undying.png",
             "assets/minecraft/textures/items/totem_of_undying.png",

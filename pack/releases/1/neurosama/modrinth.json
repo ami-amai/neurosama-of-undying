@@ -1,14 +1,14 @@
 {
     "metadata": {
         "type": "resourcepack",
-        "name": "§cEvilyn_of_Undying",
+        "name": "§eNeuro-sama of Undying",
         "author": "Ami_Amai",
-        "id": "evilyn-of-undying",
-        "version": "a2-1",
+        "id": "neurosama-of-undying",
+        "version": "o-1",
         "format": [3, 88.0]
     },
     "filedata": {
-        "alt2.png": [
+        "original.png": [
             "pack.png",
             "assets/minecraft/textures/item/totem_of_undying.png",
             "assets/minecraft/textures/items/totem_of_undying.png",
@@ -22,6 +22,6 @@
         ]
     },
     "namedata": [
-        "{name}_{version}"
+        "{name}"
     ]
 }
